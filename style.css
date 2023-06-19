@@ -5,6 +5,11 @@
     src: local('Better Together Caps'), url('fonts/Better\ Together\ Caps.woff') format('woff');
 }
 
+@font-face {
+    font-family: 'Ovsyanka';
+    src:url('./fonts/Ovsyanka-press.woff ') format('woff');
+}
+
 
 * {
     padding: 0;
@@ -13,6 +18,11 @@
     outline: none;
     border: none;
     
+}
+
+body{
+    background-image: url('./pictures/zerna.svg');
+    background-size: cover;
 }
 
 /* Начало navbar */
@@ -31,14 +41,25 @@ nav .logo-search-container {
     align-items: center;
 }
 
+.container-fluid{
+    display:flex;
+    justify-content: space-between;
+    margin: 0 70px !important;
+    align-items: center;
+    width: auto !important;
+    flex-wrap: wrap;
+
+
+}
 .container {
-    width: 80%;
-    margin: 0 auto;
+    width: 100%;
+    margin: 0 70px !important;
 }
 
 
 nav .logo__title {
     margin-right: 10px;
+    margin-bottom: 0;
 }
 
 nav .search-bar {
@@ -47,9 +68,9 @@ nav .search-bar {
 
 nav {
     width: 100%;
-    height: 100px;
+    height: auto;
     background: #130C09;
-    padding: 0.7rem 0;
+    padding: 20px 0px 20px 0px;
     position: fixed;
     top: 0;
     z-index: 10;
@@ -60,6 +81,7 @@ nav .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
 
 }
 
@@ -227,6 +249,12 @@ nav .button {
     font-size: 40px;
     font-weight: 700;
     margin-top: 10px;
+    font-family: 'Ovsyanka', sans-serif;
+    color: #54372A;
+    /* font-style: normal; */
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 48px;
 }
 
 .home-content h2 span {
@@ -395,7 +423,7 @@ nav .button {
 }
 
 .product-details {
-    padding: 30px;
+    padding: 10px 30px 30px 30px;
     width: 306px;
     height: 196px;
 }
@@ -452,7 +480,7 @@ color: #251813;
 
 .product-bottom-details {
     overflow: hidden;
-    padding-top: 20px;
+    padding-top: 0px;
 }
 
 .product-bottom-details div {
@@ -489,8 +517,16 @@ color: #251813;
     font-size: 25px;
     text-align: center;
     border-radius: 50%;
-    border: 10px solid orange;
-    background-color: orange; /* добавляем оранжевый цвет внутренней области рамки */
+    border: 10px solid #F97316;
+    background-color: #F97316; /* добавляем оранжевый цвет внутренней области рамки */
+}
+
+.product-links a:hover {
+    color: #F97316;
+    border: 10px solid #FED7AA;
+    background-color: #FED7AA;
+  
+
 }
 
 
@@ -511,6 +547,7 @@ color: #251813;
     background-color: #E9D8CB;
     margin-top: 0;
     padding-top: 80px; /* любое значение отступа */
+    border-radius: 32px;
 }
 
 
