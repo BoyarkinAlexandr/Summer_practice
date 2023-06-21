@@ -23,7 +23,10 @@
 body{
     background-image: url('./pictures/zerna.svg');
     background-size: cover;
+    background-color: #F8F5F1 !important;
 }
+
+
 
 /* Начало navbar */
 
@@ -102,7 +105,7 @@ nav .container {
 nav .button {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 36px;
 }
 
 
@@ -748,6 +751,17 @@ color: #251813;
     -webkit-transition: .2s;
     -moz-transition: .2s;
   }
+
+  .footer a{
+        text-decoration: none;
+        color: #DFDFDF; /* Цвет текста */
+  }
+
+  .footer a:hover {
+    color: #DFDFDF; /* Цвет текста при наведении */
+  }
+
+
   .social ul li {
     display: inline-block;
     padding-right: 5px !important;
