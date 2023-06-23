@@ -613,6 +613,35 @@ color: #251813;
     margin-top: 10px;
     text-align: center;
 }
+
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.7;
+    z-index: 0;
+}
+
+.modal-window {
+    position: relative;
+    z-index: 2;
+    width: 550px;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgba(0,0,0 .4);
+    background-color: #fff;
+}
   
 /* Начало слайдера */
 .slider{
@@ -818,6 +847,54 @@ color: #251813;
       width: 100%;
     }
   }
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+.popup:target{
+    opacity: 1;
+    visibility: visible;
+}
+  .popup_body{ 
+      min-height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 30px 10px;
+  }
+  .popup_content {
+    background-color: wheat;
+    color: black;
+    max-width: 800px;
+    padding: 30px;
+  }
+  .popup_close{
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      font-size: 20px;
+      color: black;
+      text-decoration: none;
+  }
+.popup_title {
+    font-family: 'Montserrat';
+    font-size: 40px;
+}
+popup_area{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    top: 0;
+    left: 0;
+    
+}
+  .popup_text{} 
 
 
 /* Конец футера */
