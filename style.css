@@ -406,9 +406,9 @@ nav .button {
 .product-row {
     display: flex;
     width: 100%;
-    display: flex;
     justify-content: space-between;
     margin-bottom: 31px;
+    gap: 30px;
 }
 
 .product-row:last-child {
@@ -427,7 +427,7 @@ nav .button {
 }
 
 
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
   .product {
   padding-left: 20px;
   padding-right: 20px;
@@ -440,7 +440,7 @@ nav .button {
   .product-card {
   margin: 20px;
   }
-}
+} */
 
 
 .badge {
@@ -585,8 +585,8 @@ color: #251813;
 
 
 .show_menu{
-    left: 620px;
-    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
     box-sizing: border-box;
     position: absolute;
     width: 284px;
